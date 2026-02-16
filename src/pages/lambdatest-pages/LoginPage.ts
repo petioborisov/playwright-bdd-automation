@@ -26,7 +26,6 @@ export class LoginPage extends BasePage {
     }
 
     async getErrorMessage() {
-        await this.page.waitForTimeout(3000); // Wait for potential alert to appear
         return await this.alertMessage.textContent();
     }
 }
